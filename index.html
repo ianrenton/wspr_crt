@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html color-mode="dark" lang="en">
+    <head>
+        <title>WSPRnet INFORMATION SYSTEM</title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; viewport-fit=cover">
+        <meta name="color-scheme" content="dark light">
+        <meta name="theme-color" content="#000000" />
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.21/jquery.csv.min.js" integrity="sha512-Y8iWYJDo6HiTo5xtml1g4QqHtl/PO1w+dmUpQfQSOTqKNsMhExfyPN2ncNAe9JuJUSKzwK/b6oaNPop4MXzkwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js"></script>
+        <script src="https://cesium.com/downloads/cesiumjs/releases/1.86/Build/Cesium/Cesium.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="style/main.css" type="text/css">
+        <link rel="stylesheet" href="style/crt.css" type="text/css">
+        <link href="https://cesium.com/downloads/cesiumjs/releases/1.86/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+    </head>
+    <body class="crt">
+        <div id="right">
+            <h1>WSPRnet INFORMATION SYSTEM</h1>
+            <h2>LATEST DETECTIONS</h2>
+            <table id="spottable">
+                <thead><tr><td>Time</td><td>Tx Call</td><td>Tx Grid</td><td>Rx Call</td><td>Rx Grid</td><tr></thead>
+                <tbody id="spottablecontent"></tbody>
+            </table>
+        </div>
+        <div id="map" />
+        <script src="./code/code.js"></script>
+    </body>
+</html>
