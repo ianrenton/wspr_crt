@@ -26,8 +26,8 @@ viewer.scene.globe.imageryLayers.removeAll();
 viewer.scene.globe.baseColor = Cesium.Color.BLACK;
 var tonerLayer = viewer.scene.globe.imageryLayers.addImageryProvider(
     new Cesium.OpenStreetMapImageryProvider({
-        url : 'https://stamen-tiles.a.ssl.fastly.net/toner-background/',
-        credit : 'Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under CC BY SA.'
+        url : 'https://tiles.stadiamaps.com/tiles/stamen_toner_background/',
+        credit : '&copy; <a href="https://stadiamaps.com/" target="_blank">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/about" target="_blank">OpenStreetMap</a> contributors'
     })
 );
 tonerLayer.alpha = 0.3;
